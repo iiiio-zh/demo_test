@@ -103,6 +103,8 @@
       var width = window.innerWidth;
       var ratio = height / width;
       if (ratio > 1.2) {
+        document.getElementById("unity-container").style.height = "auto";
+        document.getElementById("unity-container").style.width = "120%";
         popup_show();
       } else {
         popup_hide();
