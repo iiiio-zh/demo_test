@@ -104,9 +104,11 @@
       var ratio = height / width;
       if (ratio > 1.2) {
         document.getElementById("unity-container").style.height = "auto";
-        document.getElementById("unity-container").style.width = "120%";
+        document.getElementById("unity-container").style.width = "110%";
         popup_show();
       } else {
+        document.getElementById("unity-container").style.height = "110%";
+        document.getElementById("unity-container").style.width = "110%";
         popup_hide();
       }
     }
