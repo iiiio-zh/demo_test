@@ -64,17 +64,6 @@
   </div>
   <script src="Build/webgl.loader.js"></script>
   <script>
-    createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "Build/webgl.data",
-      frameworkUrl: "Build/webgl.framework.js",
-      codeUrl: "Build/webgl.wasm",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "16-bit Production",
-      productName: "demo_project",
-      productVersion: "0.1",
-    });
-  </script>
-  <script>
     getratio();
     function getratio() {
       var height = window.innerHeight;
@@ -117,10 +106,6 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       // var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
-      }
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
